@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    background-color: rgb(255, 253, 245);
+}
+
+header {
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    /* box-shadow: rgb(0 0 0 / 20%) 0px 2px 4px -1px, rgb(0 0 0 / 14%) 0px 4px 5px 0px, rgb(0 0 0 / 12%) 0px 1px 10px 0px; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    position: fixed;
+    z-index: 1100;
+    top: 0px;
+    padding: 15px 0;
+    left: auto;
+    right: 0px;
+    background-color: #fffdf5;
+    color: rgb(255, 255, 255);
+}
+
+.container {
+    width: 92%;
+    margin: auto;
+}
+
+.nav-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.nav-content {
+    margin: auto;
+    color: rgb(0, 0, 0);
+    display: flex;
+    max-width: 1440px;
+    width: 100%;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+}
+
+.logox{
+    width: 308px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.btn-opn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    margin-right: 1.5rem;
+    vertical-align: middle;
+    text-decoration: none;
+    letter-spacing: 0.02857em;
+    padding: 6px 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+
+.ext {
+    margin-right: 5.5rem;
+}
+
+.sty {
+    background-color: transparent;
+    color: #585757;
+    font-family: Graphik;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.thumbs {
+    background-color: #e7332b;
+    border-radius: 100px;
+    margin-left: -50px;
+    margin-top: -29px;
+    padding: 10px;
+    position: absolute;
+    width: 55px;
+}
+
+.enr-btn {
+    background: #e7332b;
+    border-radius: 71px;
+    box-shadow: none;
+    position: initial;
+    color: #fff;
+    padding: 10px 32px;
+}
+
+
+/* ************************ RESPONSIVENESS ***************** */
+@media (min-width: 600px){
+    .nav-container{
+        min-height: 64px;
+    }
+}
